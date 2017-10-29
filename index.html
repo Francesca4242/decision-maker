@@ -1,0 +1,44 @@
+<!Doctype HTML>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<style>
+h1{
+  font-size:50px;
+  text-align: center;
+}
+body{
+  background-color: red;
+ 
+}
+</style>
+<h1>
+Is this really a good idea????
+</h1>
+<h2 class=question>
+
+</h2>
+<h2 class=answer>
+</h2>
+<script>
+var question =prompt("State the decision that needs to be made");
+var answer;
+var a;
+var b;
+
+a = $(".question");
+b = $(".answer")
+
+a.text(question);
+
+if(Math.random() >= 0.5)
+{
+answer= ("Yeah that would be awesome!")
+}
+else{
+answer= ("If you value your sanity I wouldn't recommend that course of action")
+}
+b.text(answer);
+</script>
+</body>
